@@ -8,7 +8,7 @@ if [ $# -gt 0 ]; then
 fi
 
 if [ -z $port ]; then
-  port=12345 # default port
+  port=$default_port # default port
 fi
 
 if ! [[ $port -gt 1024 && $port -lt 65535 ]]; then
