@@ -71,14 +71,14 @@ show_changed_repo_prompt()
 
 promptshorten()
 {
-  export PS1="${fmtreset}${fmtbold}${clryellow}ॐ  ${clrblue}${fmtbold}\W\[\$(show_clean_repo_prompt)\]\[\$(show_changed_repo_prompt)\] \$(find_git_branch)${clrblue}\$ ${fmtreset}"
+  export PS1="${fmtreset}${fmtbold}${clryellow}${clrblue}${fmtbold}\W\[\$(show_clean_repo_prompt)\]\[\$(show_changed_repo_prompt)\] \$(find_git_branch)${clrblue}\$ ${fmtreset}"
 }
 promptrestore()
 {
-  export PS1="${fmtreset}${fmtbold}${clryellow}ॐ  ${clrblue}${fmtbold}\w\[\$(show_clean_repo_prompt)\]\[\$(show_changed_repo_prompt)\] \$(find_git_branch)${clrblue}\$ ${fmtreset}"
+  export PS1="${fmtreset}${fmtbold}${clryellow}${clrblue}${fmtbold}\w\[\$(show_clean_repo_prompt)\]\[\$(show_changed_repo_prompt)\] \$(find_git_branch)${clrblue}\$ ${fmtreset}"
 }
 promptremove()
 {
-  export PS1="${fmtreset}${fmtbold}${clryellow}ॐ \[\$(show_clean_repo_prompt)\]\[\$(show_changed_repo_prompt)\] \$(find_git_branch)${clrblue}\$ ${fmtreset}"
+  export PS1="${fmtreset}${fmtbold}${clryellow}\[\$(show_clean_repo_prompt)\]\[\$(show_changed_repo_prompt)\] \$(find_git_branch)${clrblue}\$ ${fmtreset}"
 }
 promptrestore
